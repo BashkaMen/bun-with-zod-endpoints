@@ -15,7 +15,7 @@ bun run index.ts
 С помощью этой штуки можно писать ебейшие ендпоинты с типизацией и валидацией запросов на основе zod схем
 если будет не впаду я добавлю openapi и будет сваггер
 
-```
+```ts
 
 const my_env = compose_envs([db_env("SERIALIZED"), logger_env]);
 
