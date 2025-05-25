@@ -17,7 +17,7 @@ bun run index.ts
 
 ```ts
 
-const my_env = compose_envs([db_env("SERIALIZED"), logger_env]);
+const my_env = compose_envs([db_env("SERIALIZED"), logger_env]); // scoped dependecy - open tx and commit\rollback after handler
 
 type User = {
   id: string;
