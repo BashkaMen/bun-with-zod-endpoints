@@ -75,3 +75,13 @@ export const create_user_endpoint = mk_zod_endpoint({
   },
 });
 ```
+Есть еще возможность писать енпоинты на уровне Middleware как в Giraffe
+
+```ts
+export const say_hello = compose([
+  method("GET"),
+  route("/hello"),
+  set_header("content-type", "text/plain"),
+  set_body_text("hello"),
+]);
+```
